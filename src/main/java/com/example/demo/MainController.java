@@ -19,8 +19,8 @@ public class MainController {
     AddressBookRepository addressBookRepository;
     @RequestMapping("/")
     public String listAddressBook(Model model){
-        model.addAttribute("addrssbooks", addressBookRepository.findAll());
-        return "addressbooklist;
+        model.addAttribute("addressbooks", addressBookRepository.findAll());
+        return "addressbooklist";
     }
     @GetMapping("/add")
     public String addressbookform(Model model){

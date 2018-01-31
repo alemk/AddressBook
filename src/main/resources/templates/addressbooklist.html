@@ -14,7 +14,7 @@
         <th>Phone</th>
         <th>E-mail</th>
     </tr>
-    <tr th:each="addrssbook: ${addrssbooks}">
+    <tr th:each="addressbook : ${addressbooks}">
 
         <td th:text="${addressbook.firstname}"></td>
         <td th:text="${addressbook.lastname}"></td>
@@ -22,9 +22,9 @@
         <td th:text="${addressbook.phonenumber}"></td>
         <td th:text="${addressbook.email}"></td>
         <td>
-            <a th:href="@{/update/{id}(id=${adressbook.id}")}>Update</a>
-            <a th:href="@{/detail/{id}(id=${adressbook.id}")}>Details</a>
-            <a th:href="@{/delete/{id}(id=${adressbook.id}")}>Delete</a>
+            <a th:href="@{/update/{id}(id=${addressbook.id})}">Update</a>
+            <a th:href="@{/detail/{id}(id=${addressbook.id})}">Detail</a>
+            <a th:href="@{/delete/{id}(id=${addressbook.id})}">Delete</a>
         </td>
     </tr>
 </table>

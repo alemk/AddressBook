@@ -24,7 +24,7 @@ public class Addressbook {
     String address;
 
     @NotNull
-    int phonenumber;
+    String phonenumber;
 
     @NotNull
     String email;
@@ -61,11 +61,11 @@ public class Addressbook {
         this.address = address;
     }
 
-    public int getPhonenumber() {
+    public String getPhonenumber() {
         return phonenumber;
     }
 
-    public void setPhonenumber(int phonenumber) {
+    public void setPhonenumber(String phonenumber) {
         this.phonenumber = phonenumber;
     }
 
