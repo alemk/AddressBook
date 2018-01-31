@@ -7,12 +7,12 @@
 <body>
 
 <a href="/" >Show all address book</a><br/>
-First Name: <span th:text="${addressbook.firsname}"></span>
-Last Name: <span th:text="${addressbook.firsname}"></span>
-Address: <span th:text="${addressbook.firsname}"></span>
-
-Phone: <span th:text="${addressbook.firsname}"></span>
-Email: <span th:text="${addressbook.firsname}"></span>
+First Name: <span th:text="${addressbook.firstname}"></span><BR/>
+Last Name: <span th:text="${addressbook.lastname}"></span><BR/>
+Address: <span th:text="${addressbook.address}"></span><BR/>
+Phone: <span th:text="${addressbook.phonenumber}"></span><BR/>
+Email: <span th:text="${addressbook.email}"></span>
+<a th:href="@{/delete/{id}(id=${addressbook.id})}" >Delete this Address book</a>
 
 </body>
 </html>
